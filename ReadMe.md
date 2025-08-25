@@ -30,10 +30,13 @@ output.conf
 
 ```
 WireGuard-SelectiveVPN/
+├── .gitignore
+├── base_example.conf
 ├── base.conf
 ├── domains.txt
 ├── generate-conf.ps1
 ├── generate-conf.py
+├── ReadMe.md
 └── output.conf
 ```
 
@@ -41,6 +44,7 @@ WireGuard-SelectiveVPN/
 
 ---
 
-Вы потрясающий! ![You are breathtaking](https://tenor.com/ru/view/willem-dafoe-willem-keanu-reeves-youre-breathtaking-breathtaking-gif-23688540)
+#### Вы потрясающий!  
+ ![You are breathtaking](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2VtZTZranp1OTlid2U4ZjVzcHZsYjJ2Ynl0aGg0bmhvOXI4bTJsZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/V1dH38rUl9yX7xU8nh/giphy.gif)
 
 
