@@ -23,3 +23,15 @@ $allowedIPs = $ipList -join ", "
 
 Write-Host "`n✅ Генерация завершена. AllowedIPs:"
 $ipList | ForEach-Object { Write-Host " → $_" }
+
+# Имя интерфейса в WireGuard (например, wg0)
+$interfaceName = "output"
+
+# Путь к файлу конфигурации в текущей папке скрипта
+$configPath = Join-Path $PSScriptRoot "output.conf"
+
+# Выключить интерфейс
+& "C:\Program Files\WireGuard\wireguard.exe" /uninstalltunnelservice $interfaceName
+
+# Установить заново с новым конфигом
+& "C:\Program Files\WireGuard\wireguard.exe" /installtunnelservice  $configPath
